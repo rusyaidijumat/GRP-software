@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+	/*The <body> properties*/
+	body{
+	    background-color: #f7f7f7;
+	}
+	
+	
+	/*The title properties*/
+	.title{
+		font-family:Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+		font-size: 36px;
+    	color: blue;
+		margin-top: 10px;
+		margin-left: 0px;
+		text-align: left;
+	} 
+	
+	
+	/*The header properties*/
+	.header {
+		font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+		font-size: 14px;
+		height:30px;
+		background: #C8C8C8;
+		border:1.5px solid black;
+		width:960px;
+		margin:0px auto;
+		margin-top: 22px;
+		text-align: left;
+	}
+	
+	
+	/*The linking properties*/
+	a.main:link {font-weight: bold; color: white; text-decoration: none;}
+	a.main:visited {font-style: italic; color: white; text-decoration: none;}
+	a.main:hover {font-style: italic; color: red; text-decoration: none;}
+	a.main:active {font-weight: bold; color: black; text-decoration: underline;}
+	/*The linking properties*/
+	a.index:link {font-weight: bold; color: black; text-decoration: none;}
+	a.index:visited {font-style: italic; color: black; text-decoration: none;}
+	a.index:hover {font-style: italic; color: red; text-decoration: none;}
+	a.index:active {font-weight: bold; color: black; text-decoration: underline;}
+	
+	
+	/*The right side (aside) propeties*/
+	.sty{
+	font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size: 14px;
+	text-align: left;
+	width: 25%;
+	margin-left: 4%;
+	float: left;
+	} 
+	
+	
+	/*The left side properties*/
+	.style{
+	font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size: 14px;
+	text-align: left;
+	width: 70%;
+	float: left;
+	} 
+	
+	
+	/*The main style propeties*/
+	.style1{
+		font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+		font-size: 14px;
+		color: black;
+		margin-top: 22px;
+		text-align: left;
+	} 
+	
+	
+	/*The page wraper properties*/
+	.wrapper {
+	    width: 960px;
+	    margin: 0px auto;
+	    padding-top: 20px;
+	    min-height: 600px;
+	}
+	/*The page wrapper for the form properties*/
+	.wrapper2 {
+	    width: 960px;
+	    margin: 0px auto;
+	    padding-top: 20px;
+	    min-height: 600px;
+	}
+	
+	
+	/*The page wraper properties for different tags.
+	h1, h4, p, pre, ul nad li tags*/
+	.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    vertical-align: baseline;
+	    background: transparent;
+	}
+	/*The page wraper for list properties*/
+	.wrapper li {
+	    outline: 0;
+	    text-decoration: none;
+	    -webkit-transition-property: background color;
+	    -moz-transition-property: background color;
+	    -o-transition-property: background color;
+	    -ms-transition-property: background color;
+	    transition-property: background color;
+	    -webkit-transition-duration: 0.12s;
+	    -moz-transition-duration: 0.12s;
+	    -o-transition-duration: 0.12s;
+	    -ms-transition-duration: 0.12s;
+	    transition-duration: 0.12s;
+	    -webkit-transition-timing-function: ease-out;
+	    -moz-transition-timing-function: ease-out;
+	    -o-transition-timing-function: ease-out;
+	    -ms-transition-timing-function: ease-out;
+	    transition-timing-function: ease-out;
+	}
+	/*The page navigation properties*/	
+	#v-nav {
+	    height: 100%;
+	    margin: auto;
+	    color: #333;
+	    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	}
+	/*The page navigation properties for unordered list*/
+	#v-nav >ul {
+	    float: left;
+	    width: 210px;
+	    display: block;
+	    position: relative;
+	    top: 0;
+	    border: 1px solid #DDD;
+	    border-right-width: 0;
+	    margin: auto 0 !important;
+	    padding:0;
+	}
+	/*The page navigation properties for contents of unordered list*/
+	#v-nav >ul >li {
+	    width: 180px;
+	    list-style-type: none;
+	    display: block;
+	    text-shadow: 0px 1px 1px #F2F1F0;
+	    font-size: 1.11em;
+	    position: relative;
+	    border-right-width: 0;
+	    border-bottom: 1px solid #DDD;
+	    margin: auto;
+	    padding: 10px 15px !important;
+	    background: whiteSmoke; /* Old browsers */
+	    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2)); /* Chrome,Safari4+ */
+	    background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	    background: -o-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Opera 11.10+ */
+	    background: -ms-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* IE10+ */
+	    background: linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* W3C */
+	}
+	/*The page navigation properties for contents of unordered list currently clicked by the user*/
+	#v-nav >ul >li.current {
+	    color: black;
+	    border-right: none;
+	    z-index: 10;
+	    background: white !important;
+	    position: relative;
+	    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+	    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+	    box-shadow: inset 0 0 35px 5px #fafbfd;
+	} 
+	/*The page navigation properties for contents of unordered list currently clicked by the user.
+	The first item on the list*/
+	#v-nav >ul >li.first.current {
+	    border-bottom: 1px solid #DDD;
+	} 
+	/*The page navigation properties for contents of unordered list currently clicked by the user.
+	The last item on the list*/ 
+	#v-nav >ul >li.last {
+	    border-bottom: none;
+	} 
+	/*The page navigation tab-content properties*/	 
+	#v-nav >div.tab-content {
+	    margin-left: 210px;
+	    border: 1px solid #ddd;
+	    background-color: #FFF;
+	    min-height: 400px;
+	    position: relative;
+	    z-index: 9;
+	    padding: 12px;
+	    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+	    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+	    box-shadow: inset 0 0 35px 5px #fafbfd;
+	    display: none;
+	    padding: 25px;
+		text-align:justify;
+	} 
+	/*The page navigation tab-contents properties for the tab title*/	 
+	#v-nav >div.tab-content >h4 {
+	    font-size: 1.2em;
+	    color: Black;
+	    text-shadow: 0px 1px 1px #F2F1F0;
+	    border-bottom: 1px dotted #EEEDED;
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	}
+
+	
+	/*The search button properties*/	
+	.srchheader{
+		background-color: #E8E8E8;
+	}	
+	.srchnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.srchtextinput{
+		margin-top: 20px;	
+		padding: 4px 15px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #B8B8B8; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.srchbutton {
+		margin-right: 100px;	
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #FFFFFF;
+		border: solid 1px #B8B8B8; border-right:0px;
+		background: #F8F8F8;
+		background: -moz-linear-gradient(top,  #D0D0D0,  #606060);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.srchbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -moz-linear-gradient(bottom,  #E0E0E0,  #B0B0B0);
+	}
+	.srchbutton::-moz-focus-inner {
+  		border: 0;
+	}
+	.srchclear{
+		clear:both;
+	}
+	
+	.imgContainer{
+    float:left;
+}
+
+.imgContainer1{
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.imgContainer2{
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

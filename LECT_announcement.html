@@ -1,0 +1,116 @@
+<!--This webpage is using HTML5-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <!--The webpage title-->
+		<title>Making Announcement</title>
+        <!--The webpage icon-->
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<!-- Include Styles -->
+	    <!--[if IE 7]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]-->
+	    <!--[if IE 8]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]--></pre>
+                
+		<section class="wrapper" id="wrapper"> 
+	
+		<div class="title">
+        	<!--The page logo-->
+			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
+			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
+			&nbsp;&nbsp;
+            <!--The logout button-->
+			<a href="index.html">
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
+		</div>
+		
+		<!--The header that with hyperlinks to other part of the webpage-->
+		<div class="header">&nbsp;&nbsp;
+            	<a href="LECT_home.html" class="main">Home</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_timetable.html" class="main">Teaching Timetable</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_announcement.html" class="main">Making Announcement</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_manage_timetable.html" class="main">Manage My Timetable</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_leave_application.html" class="main">Leave Application</a>
+			</div><br>
+		
+		<!--The main part of the vertical tab-->
+		<div id="v-nav">
+			<ul>
+				<li class="first current">Make Announcement</li>
+				<li>Manage Student Group</li>
+				<li>Add Group</li>
+				<li class="last">Delete Group</li>
+			</ul>
+		
+		<!--The vertical tab contents for Make Announcement-->		
+		<div class="tab-content">
+			<h4>Make Announcement</h4><br>
+            <form>
+					Title : <input type="text" name="title" style="width:300px;"><br><br>
+                    Group : <select>
+                    			<option value="none"></option>
+                                <option value="one">Group 1</option>
+                                <option value="two">Group 2</option>
+                    		</select><br><br>
+                    Individual ID : <input type="text" name="indID" style="width:300px;"><br><br>
+					Contents : <br><textarea rows="10" cols="40" style="width:500px; height:130px;" name="details"></textarea><br><br>
+					Important announcement : &nbsp;&nbsp;
+                    <input type="checkbox" name="importance" value="important">Important!<br><br>
+					<input type="submit" name="submit" onClick="alert('Announcement Successful')" value="Announce">
+					<input type="reset" name="reset" value="Reset">
+			</form>
+		</div>
+		
+		<!--The vertical tab contents for Manage Student Group-->		
+		<div class="tab-content">
+			<h4>Manage Student Group</h4>
+		</div>
+		
+		<!--The vertical tab contents for Add Group-->
+		<div class="tab-content">
+			<h4>Add Group</h4><br>
+            <form>
+					Group Name : <input type="text" name="title" style="width:300px;"><br><br>
+					Member ID : <br> <textarea rows="10" cols="40" style="width:500px; height:130px;" name="details"></textarea><br><br>
+					<input type="submit" name="submit" value="Add Group">
+					<input type="reset" name="reset" value="Reset">
+				</form>
+		</div>
+		
+		<!--The vertical tab contents for Delete Group-->
+		<div class="tab-content">
+			<h4>Delete Group</h4><br>
+            Group : <select>
+                    	<option value="none"></option>
+                        <option value="one">Group 1</option>
+                        <option value="two">Group 2</option>
+                    </select><br><br>
+            <input type="submit" name="delete" value="Delete Group">
+		</div>
+	
+	</div>
+	
+	</section>
+	
+	<pre>
+	            <!-- Include Scripts -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
+	<script type="text/javascript" src="assets.js"></script>
+	
+	&copy; UNMC
+	</body>
+</html>

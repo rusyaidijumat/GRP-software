@@ -1,0 +1,108 @@
+<!--This webpage is using HTML5-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <!--The webpage title-->
+		<title>Leave Application</title>
+        <!--The webpage icon-->
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<!-- Include Styles -->
+	    <!--[if IE 7]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]-->
+	    <!--[if IE 8]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]--></pre>
+                
+		<section class="wrapper" id="wrapper"> 
+	
+		<div class="title">
+        	<!--The page logo-->
+			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
+			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
+			&nbsp;&nbsp;
+            <!--The logout button-->
+			<a href="index.html">
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
+		</div>
+		
+		<!--The header that with hyperlinks to other part of the webpage-->
+		<div class="header">&nbsp;&nbsp;
+            	<a href="LECT_home.html" class="main">Home</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_timetable.html" class="main">Teaching Timetable</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_announcement.html" class="main">Making Announcement</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_manage_timetable.html" class="main">Manage My Timetable</a>
+					&nbsp;&nbsp; &nbsp;&nbsp;
+				<a href="LECT_leave_application.html" class="main">Leave Application</a>
+			</div><br>
+		
+		<!--The main part of the vertical tab-->
+		<div id="v-nav">
+			<ul>
+				<li class="first current">Apply For Leave</li>
+				<li>Leave Application Progress</li>
+				<li class="last">Leave History</li>
+			</ul>
+		
+		<!--The vertical tab contents for Apply For Leave-->	
+		<div class="tab-content">
+			<h4>Apply For Leave</h4><br>
+            <form>
+				Leaves Remaining  : <input type="text" name="title" value="30" readonly> Days <br><br>
+                Name : <input type="text" name="name" value="Lecturer 1" readonly><br><br>
+                Individual ID : <input type="text" name="date" value="abcd123" readonly><br><br>
+                Leaves Type: <select>
+                    			<option value="leaves">Annual Leaves</option>
+                                <option value="leaves">Emergency Leaves</option>
+                            </select><br><br>
+                Date : <input type="text" name="date"><br><br>
+                Number of days :<select>
+                    				<option value="num">1</option>
+                                	<option value="num">2</option>
+                                    <option value="num">3</option>
+                                	<option value="num">4</option>
+                                    <option value="num">5</option>
+                                	<option value="num">6</option>
+                            	 </select><br><br>
+                    Supporting Documents <br>
+                    <textarea rows="10" cols="40" style="width:500px; height:130px;" name="details"></textarea>
+            			&nbsp;&nbsp;&nbsp;&nbsp;
+           			<button type="button" class="button">Upload</button><br><br>
+                    <input type="reset" name="reset" value="Reset">
+            		<input type="submit" name="submit" value="Submit">
+			</form>
+		</div>
+		
+		<!--The vertical tab contents for Leave Application Progress-->	
+		<div class="tab-content">
+			<h4>Leave Application Progress</h4>
+		</div>
+		
+		<!--The vertical tab contents for Leave History-->	
+		<div class="tab-content">
+			<h4>Leave History</h4>
+		</div>
+	
+	</div>
+	
+	</section>
+	
+	<pre>
+	            <!-- Include Scripts -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
+	<script type="text/javascript" src="assets.js"></script>
+	
+	&copy; UNMC
+	</body>
+</html>

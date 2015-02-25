@@ -1,0 +1,101 @@
+<!--This webpage is using HTML5-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <!--The webpage title-->
+		<title>Add/Drop Module</title>
+        <!--The webpage icon-->
+		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<!-- Include Styles -->
+	    <!--[if IE 7]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]-->
+	    <!--[if IE 8]>
+		<style type="text/css">#v-nav>ul>li.current{border-right:1px solid #fff!important}#v-nav>div.tab-content{z-index:-1!important;left:0}</style>
+		<![endif]--></pre>
+               
+		<section class="wrapper" id="wrapper"> 
+		
+		<div class="title">
+        	<!--The page logo-->
+			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
+			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
+			&nbsp;&nbsp;
+            <!--The logout button-->
+			<a href="index.html">
+			<button type="button" class="button">Log out</button></a></p>
+		</div>
+		
+		<!--The header that with hyperlinks to other part of the webpage-->
+		<div class="header">&nbsp;&nbsp;
+			<a href="AD_home.html" class="main">Home</a>
+				&nbsp;&nbsp; &nbsp;&nbsp;
+			<a href="AD_ECF-admin.html"class="main">ECF</a>
+				&nbsp;&nbsp; &nbsp;&nbsp;
+			<a href="AD_ADM.html"class="main">Add / Drop Module</a>
+				&nbsp;&nbsp; &nbsp;&nbsp;
+			<a href="manage_members.html" class="main">Leave application</a>
+			
+		</div><br>
+		
+		<!--The main part of the vertical tab-->
+		<div id="v-nav">
+			<ul>
+				<li class="first current">Student</li>
+				<li class="last">Request</li>
+			</ul>
+		
+		<!--The vertical tab contents-->
+		<div class="tab-content">
+			
+			<p><h4>Student Records</h4>
+            <form>
+			<br><p>Name : <br><input type="text" name="name"> <br><br>
+     Student ID : <br><input type="text" name="ID" > Year of Course : <input type="text" name="year" ><br><br>
+     Course : <br><input type="text" name="course"> <br></p>
+     <br>
+     <input type="submit" name="submit" value="Search">
+     <br><br>
+     List: <textarea rows="10" cols="40" style="width:700px; height:130px;" name="list" ></textarea><br><br>
+ <a href="AD_ADM_edit.html">
+		<button type="button" >Select</button></a><br>
+  </form></p>
+		</div>
+		
+		<!--The vertical tab contents-->
+		<div class="tab-content">
+			<h4>Student Request</h4>
+            <form>
+			
+     
+     <br>
+      <textarea rows="10" cols="40" style="width:700px; height:400px;" name="list" ></textarea><br><br>
+ <a href="AD_ECF_rec-admin.html">
+		<button type="button" >Select</button></a> <input type="submit" name="refresh" value="Refresh"> <br>
+  </form>
+     
+     
+		</div>
+		
+	
+	</div>
+	
+	</section>
+	
+	<pre>
+	            <!-- Include Scripts -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
+	<script type="text/javascript" src="assets.js"></script>
+	
+	<!--UNMC copyright-->
+	&copy; UNMC
+	</body>
+</html>

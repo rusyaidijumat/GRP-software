@@ -1,0 +1,5 @@
+LECT->lecturere
+SACS->clubs/stud assoc
+STUD->students
+TRBS->transport
+AD->admin
