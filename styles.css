@@ -2,7 +2,9 @@
 /* CSS Document */
 	/*The <body> properties*/
 	body{
-	    background-color: #d7d7d7;
+	    background-image: url("back1.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 	}
 	
 	
@@ -22,19 +24,33 @@
 		font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
 		font-size: 14px;
 		height:30px;
-		background: #C8C8C8;
+		background: -moz-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		background: -webkit-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		opacity: 0.9;
 		border:1.5px solid black;
 		width:960px;
 		margin:0px auto;
 		margin-top: 22px;
 		text-align: left;
 	}
+	.footer {
+		font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		height:30px;
+		width: 200px;
+		background: -moz-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		background: -webkit-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		opacity: 0.9;
+		margin:0px auto;
+		text-align: center;
+	}
 	
 	
 	/*The linking properties*/
-	a.main:link {font-weight: bold; color: white; text-decoration: none;}
-	a.main:visited {font-style: italic; color: white; text-decoration: none;}
-	a.main:hover {font-style: italic; color: red; text-decoration: none;}
+	a.main:link {font-weight: bold; color: black; text-decoration: none;}
+	a.main:visited {font-style: italic; color: black; text-decoration: none;}
+	a.main:hover {font-style: italic; color: #F00; text-decoration: none;}
 	a.main:active {font-weight: bold; color: black; text-decoration: underline;}
 	/*The linking properties*/
 	a.index:link {font-weight: bold; color: black; text-decoration: none;}
@@ -73,22 +89,22 @@
 		text-align: left;
 	} 
 	
+	.contents{
+		background: -moz-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		background: -webkit-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+	}
+		
+	.cont{
+		margin: 20px;
+	}
 	
 	/*The page wraper properties*/
 	.wrapper {
 	    width: 960px;
 	    margin: 0px auto;
 	    padding-top: 20px;
-	    min-height: 600px;
+	    min-height: 745px;
 	}
-	/*The page wrapper for the form properties*/
-	.wrapper2 {
-	    width: 960px;
-	    margin: 0px auto;
-	    padding-top: 20px;
-	    min-height: 600px;
-	}
-	
 	
 	/*The page wraper properties for different tags.
 	h1, h4, p, pre, ul nad li tags*/
@@ -104,19 +120,10 @@
 	    outline: 0;
 	    text-decoration: none;
 	    -webkit-transition-property: background color;
-	    -moz-transition-property: background color;
-	    -o-transition-property: background color;
-	    -ms-transition-property: background color;
 	    transition-property: background color;
-	    -webkit-transition-duration: 0.12s;
 	    -moz-transition-duration: 0.12s;
-	    -o-transition-duration: 0.12s;
-	    -ms-transition-duration: 0.12s;
 	    transition-duration: 0.12s;
-	    -webkit-transition-timing-function: ease-out;
 	    -moz-transition-timing-function: ease-out;
-	    -o-transition-timing-function: ease-out;
-	    -ms-transition-timing-function: ease-out;
 	    transition-timing-function: ease-out;
 	}
 	/*The page navigation properties*/	
@@ -151,12 +158,9 @@
 	    margin: auto;
 	    padding: 10px 15px !important;
 	    background: whiteSmoke; /* Old browsers */
-	    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
-	    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2)); /* Chrome,Safari4+ */
-	    background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Chrome10+,Safari5.1+ */
-	    background: -o-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Opera 11.10+ */
-	    background: -ms-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* IE10+ */
-	    background: linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* W3C */
+	    background: -moz-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient(top, #E7CFFF 0%, #f2f2f2 100%);
+		opacity: 0.9;
 	}
 	/*The page navigation properties for contents of unordered list currently clicked by the user*/
 	#v-nav >ul >li.current {
@@ -166,7 +170,6 @@
 	    background: white !important;
 	    position: relative;
 	    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
-	    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
 	    box-shadow: inset 0 0 35px 5px #fafbfd;
 	} 
 	/*The page navigation properties for contents of unordered list currently clicked by the user.
@@ -189,7 +192,6 @@
 	    z-index: 9;
 	    padding: 12px;
 	    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
-	    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
 	    box-shadow: inset 0 0 35px 5px #fafbfd;
 	    display: none;
 	    padding: 25px;
@@ -236,6 +238,7 @@
 		border: solid 1px #B8B8B8; border-right:0px;
 		background: #F8F8F8;
 		background: -moz-linear-gradient(top,  #D0D0D0,  #606060);
+		background: -webkit-linear-gradient(top,  #D0D0D0,  #606060);
 		border-top-right-radius: 5px 5px;
 		border-bottom-right-radius: 5px 5px;
 	}
@@ -243,6 +246,7 @@
 		text-decoration: none;
 		background: #007ead;
 		background: -moz-linear-gradient(bottom,  #E0E0E0,  #B0B0B0);
+		background: -webkit-linear-gradient(bottom,  #E0E0E0,  #B0B0B0);
 	}
 	.srchbutton::-moz-focus-inner {
   		border: 0;
@@ -251,19 +255,19 @@
 		clear:both;
 	}
 	
-	.imgContainer{
-    float:left;
-}
+		#extable { border-collapse:collapse;}
+        #extable ul { margin:10px 0 10px 40px; padding:0px;}
+        #extable th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#FFF; padding:7px 15px; text-align:left;}
+        #extable td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:7px 15px; }
+        #extable tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
+        #extable div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px ; width:16px; height:16px; display:block;}
+        #extable div.up { background-position:0px 0px;}
 
-.imgContainer1{
-	margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.imgContainer2{
-	margin-top: 10px;
-	margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+/**/
+#extable1 { border-collapse:collapse;}
+#extable1 ul { margin:10px 0 10px 40px; padding:0px;}
+#extable1 th { background:#7CB8E2 url(header_bkg.png) repeat-x scroll center left; color:#FFF; padding:7px 15px; text-align:left;}
+#extable1 td { background:#C7DDEE none repeat-x scroll center left; color:#000; padding:7px 15px; }
+#extable1 tr.odd td { background:#fff url(row_bkg.png) repeat-x scroll center left; cursor:pointer; }
+#extable1 div.arrow { background:transparent url(arrows.png) no-repeat scroll 0px -16px ; width:16px; height:16px; display:block;}
+ #extable1 div.up { background-position:0px 0px;}
