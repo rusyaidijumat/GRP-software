@@ -31,7 +31,7 @@
 			&nbsp;&nbsp;
             <!--The logout button-->
 			<a href="index.html">
-			<button type="button" class="button">Log out</button></a></p>
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
 		</div>
 		
 		<!--The header that with hyperlinks to other part of the webpage-->
@@ -47,11 +47,14 @@
 				<a href="SACS_manage_events.html" class="main">Manage Events</a>
 			</div><br>
 		
-        <!--The Calendar-->
-			<div class="style"  id="main"><strong>Calendar</strong><br>
+       <!--The Calendar-->
+			<div class="style contents" id="main"><br>
+            <p align="center">
+            <iframe src="https://www.dayhaps.com/en/widget-calendar-4065.html?lang=en" height='550px' width='95%' border='0' style="border:none;"></iframe></p>
 			</div>
+            
 			<!--Navigation links on the right side in the webpage-->
-			<aside class="sty" id="navi">
+			<aside class="sty contents" id="navi">
 				<!--Notification-->
 				<strong>Notification</strong>
 			</aside>
@@ -61,6 +64,6 @@
 	<pre>
 	
 	<!--UNMC copyright-->
-	&copy; UNMC
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
