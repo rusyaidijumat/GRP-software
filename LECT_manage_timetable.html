@@ -61,13 +61,9 @@
 			<h4>Add Event</h4><br>
             <form>
 					Event Title : <input type="text" name="title" style="width:300px;"><br><br>
-                    Date : <input type="text" name="date"><br><br>
-                    Time : From <input type="text" name="date"><select>
-                    												<option value="am">AM</option>
-                                                                    <option value="pm">PM</option></select>
-                    		to 	<input type="text" name="date"><select>
-                    												<option value="am">AM</option>
-                                                                    <option value="pm">PM</option></select>
+                    Date : <input type="date" name="date"><br><br>
+                    Time : From <input type="time" name="time">
+                    		to 	<input type="time" name="time"> &nbsp;&nbsp; [HR:MI AM/PM]
                     <br><br>
                     Venue : <input type="text" name="indID" style="width:300px;"><br><br>
                     Invite People? : &nbsp;&nbsp;
@@ -79,7 +75,7 @@
                     		</select><br><br>
                    
 					Individual ID  : <br><textarea rows="10" cols="40" style="width:500px; height:130px;" name="details"></textarea><br><br>
-					<input type="submit" name="submit" value="Add Events">
+					<input type="submit" name="submit" onClick="alert('New events has been added.')" value="Add Events">
 					<input type="reset" name="reset" value="Reset">
 			</form>
 		</div>
@@ -88,14 +84,14 @@
 		<div class="tab-content">
 			<h4>Edit Or Delete Event</h4><br>
              <form>
-                    Date : <input type="text" name="date"><br><br>
-                    Groups : <select>
+                    Date : <input type="date" name="date"><br><br>
+                    Events : <select>
                     			<option value="none"></option>
-                                <option value="one">Group 1</option>
-                                <option value="two">Group 2</option>
+                                <option value="one">Event 1</option>
+                                <option value="two">Event 2</option>
                     		</select><br><br>
-					<input type="submit" name="submit" value="Edit">
-					<input type="submit" name="delete" value="Delete">
+					<input type="submit" name="submit" onClick="alert('The selected events has been successfully edited')" value="Edit">
+					<input type="submit" name="delete" onClick="alert('The selected event has been successfully deleted.')" value="Delete">
 			</form>
 		</div>
 		
@@ -103,6 +99,32 @@
 		<div class="tab-content">
 			<h4>Appointment Request</h4><br>
           	<div class="style"  id="main"><strong>Request Table</strong><br>
+            <br>
+            <table border="1" cellspacing="0" cellpadding="0">
+				 <tr>
+    <td width="265" valign="top"><p>Student Name</p></td>
+    <td width="96" valign="top"><p>Student ID</p></td>
+    <td width="132" valign="top"><p>Appointment </p></td>
+  </tr>
+  <tr>
+    <td width="265" valign="top"><p>Student 1</p></td>
+    <td width="96" valign="top"><p>000000</p></td>
+    <td width="132" valign="top"><p>Date:<br>
+      Time:</p></td>
+  </tr>
+  <tr>
+    <td width="265" valign="top"><p>Student 2</p></td>
+    <td width="96" valign="top"><p>000001</p></td>
+    <td width="132" valign="top"><p>Date:<br>
+      Time:</p></td>
+  </tr>
+  <tr>
+    <td width="265" valign="top"><p>Student 3</p></td>
+    <td width="96" valign="top"><p>000002</p></td>
+    <td width="132" valign="top"><p>Date:<br>
+      Time:</p></td>
+  </tr>
+            </table>
               <p>
                 <aside class="sty" id="navi"> </aside>
               </p>
@@ -110,9 +132,22 @@
           <aside class="sty" id="navi">
             <div align="left">
               Request: <br>
-              <input type="checkbox" name="request" value="accept">Accept
+              Student 1 <br>
+              <p><input type="radio" name="request" value="accept" checked>Accept
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <input type="checkbox" name="request" value="reject">Reject
+              <input type="radio" name="request" value="reject">Reject</p>
+              <br>
+              Student 2 <br>
+              <p><input type="radio" name="request1" value="accept" checked>Accept
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="request1" value="reject">Reject</p>
+              <br>
+              Student 3 <br>
+              <p><input type="radio" name="request2" value="accept" checked>Accept
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="request2" value="reject">Reject</p>
+              <br>
+              <p align="right"><input type="submit" name="save" onClick="alert('The stdent(s) has been notified on their appointment request status.')" value="Save"></p> 
             </div>
           </aside>
         </div>
@@ -138,6 +173,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
 	<script type="text/javascript" src="assets.js"></script>
 	
-	&copy; UNMC
+	<!--UNMC copyright-->
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
