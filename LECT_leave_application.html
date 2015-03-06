@@ -61,12 +61,12 @@
             <form>
 				Leaves Remaining  : <input type="text" name="title" value="30" readonly> Days <br><br>
                 Name : <input type="text" name="name" value="Lecturer 1" readonly><br><br>
-                Individual ID : <input type="text" name="date" value="abcd123" readonly><br><br>
+                Individual ID : <input type="text" name="id" value="abcd123" readonly><br><br>
                 Leaves Type: <select>
                     			<option value="leaves">Annual Leaves</option>
                                 <option value="leaves">Emergency Leaves</option>
                             </select><br><br>
-                Date : <input type="text" name="date"><br><br>
+                Date : <input type="date" name="date"><br><br>
                 Number of days :<select>
                     				<option value="num">1</option>
                                 	<option value="num">2</option>
@@ -75,12 +75,10 @@
                                     <option value="num">5</option>
                                 	<option value="num">6</option>
                             	 </select><br><br>
-                    Supporting Documents <br>
-                    <textarea rows="10" cols="40" style="width:500px; height:130px;" name="details"></textarea>
-            			&nbsp;&nbsp;&nbsp;&nbsp;
-           			<button type="button" class="button">Upload</button><br><br>
+                    Supporting Document(s) <em><font color="#FF0000"> ** in pdf file </font></em><br>
+                    <input type="file" id="myFile" accept="application/pdf" multiple><br><br>
                     <input type="reset" name="reset" value="Reset">
-            		<input type="submit" name="submit" value="Submit">
+            		<input type="submit" name="submit" onClick="alert('The form has been successfully send.')" value="Submit">
 			</form>
 		</div>
 		
@@ -103,6 +101,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
 	<script type="text/javascript" src="assets.js"></script>
 	
-	&copy; UNMC
+    <!--UNMC copyright-->
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
