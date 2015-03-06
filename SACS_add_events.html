@@ -1,9 +1,13 @@
+<!--This webpage is using HTML5-->
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
+        <!--The webpage title-->
 		<title>Add Events</title>
+        <!--The webpage icon-->
 		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
 		<link href="styles.css" rel="stylesheet" />
 		</head>
 		
@@ -19,14 +23,18 @@
 			<section class="wrapper" id="wrapper"> 
 			
 			<div class="title">
-				<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
-				&nbsp;&nbsp;
-                <a href="index.html">
-				<button type="button" class="button">Log out</button></a></p>
-			</div>
+        	<!--The page logo-->
+			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
+			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
+			&nbsp;&nbsp;
+            <!--The logout button-->
+			<a href="index.html">
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
+		</div>
 			
+            <!--The header that with hyperlinks to other part of the webpage-->
 			<div class="header">&nbsp;&nbsp;
 				<a href="SACS_home.html" class="main">Home</a>
 					&nbsp;&nbsp; &nbsp;&nbsp;
@@ -39,23 +47,29 @@
 				<a href="SACS_manage_events.html" class="main">Manage Events</a>
 			</div>
 			
-			<div class="style1">
+            <!-- Add new event form -->
+            <div class="contents">
+			<div class="style1 cont">
+            	<br>
 				<form>
 					Events Name : <input type="text" name="ename" style="width:300px;"><br><br>
 					Details : <textarea rows="10" cols="40" style="width:900px; height:130px;" name="details"></textarea><br><br>
 					Venue : <input type="text" name="e_name"  style="width:300px;"><br><br>
-					Date :&nbsp;&nbsp;&nbsp;<input type="text" name="date">	
+					Date :&nbsp;&nbsp;&nbsp;<input type="date" name="date">	
 					&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					Time: <input type="text" name="time"><br><br>
+					Time: <input type="time" name="time">&nbsp;&nbsp; [HR:MI AM/PM]<br><br>
 					Invite :  &nbsp;<input type="text" name="invite" style="width:300px;"><br><br>	
 					Compulsory : <input type="text" name="compulsory" style="width:300px;"><br><br><br>
-					<input type="submit" name="submit" value="Add event">
+					<input type="submit" name="submit" onClick="alert('The event has been successfully added')" value="Add event">
 					<input type="reset" name="reset" value="Reset">
 				</form>
+                <br>
 			</div>
+            </div>
 	</section>
     
-    &copy; UNMC
+    <!--UNMC copyright-->
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
