@@ -1,9 +1,13 @@
+<!--This webpage is using HTML5-->
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
+        <!--The webpage title-->
 		<title>Student Association News</title>
+		<!--The webpage icon-->
 		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
 		<link href="styles.css" rel="stylesheet" />
 	</head>
 	
@@ -19,14 +23,18 @@
 		<section class="wrapper" id="wrapper"> 
 	
 		<div class="title">
+        	<!--The page logo-->
 			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
 			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
 			&nbsp;&nbsp;
+            <!--The logout button-->
 			<a href="index.html">
-			<button type="button" class="button">Log out</button></a></p>
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
 		</div>
 
+		<!--The header that with hyperlinks to other part of the webpage-->
 		<div class="header">&nbsp;&nbsp;
 			<a href="STUD_home.html" class="main">Home</a>
 				&nbsp;&nbsp; &nbsp;&nbsp;
@@ -36,21 +44,22 @@
 				&nbsp;&nbsp; &nbsp;&nbsp;
 			<a href="STUD_transport.html"class="main">Transport</a>
 				&nbsp;&nbsp; &nbsp;&nbsp;
-			<a href="STUD_news.html"class="main">SA News</a>
+			<a href="STUD_news.html"class="main">SA</a>
 		</div><br>
-        <div class="style1">
-        Clubs and Society &nbsp;&nbsp;&nbsp;
-         	<select>
-            	<option value="none"></option>
- 		 		<option value="css">Computer Science Society</option>
-  				<option value="jsoc">Japanese Society</option>
-  				<option value="aisec">AISEC</option>
-  				<option value="music">Music Society</option>
-			</select> 
+		<div class="contents">
+        <div class="cont style1">
+        <br>
+    	<p>Joined club</p>
+    	<p style="border:1px solid #333"><br><br><br><br></p><br>
+        
         </div>
+		</div>
+        
     </section>
 	
 	<pre>
-	&copy; UNMC
+	
+    <!--UNMC copyright-->
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
