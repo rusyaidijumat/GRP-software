@@ -1,10 +1,44 @@
+<!--This webpage is using HTML5-->
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
+        <!--The webpage title-->
 		<title>Manage Events</title>
+        <!--The webpage icon-->
 		<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        <!--Linking to CSS file-->
 		<link href="styles.css" rel="stylesheet" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    	<script type="text/javascript">  
+        $(document).ready(function(){
+            $("#extable tr:odd").addClass("odd");
+            $("#extable tr:not(.odd)").hide();
+            $("#extable tr:first-child").show();
+            
+            $("#extable tr.odd").click(function(){
+                $(this).next("tr").toggle();
+                $(this).find(".arrow").toggleClass("up");
+            });
+            //$("#extable").jExpand();
+        });
+    </script>        
+    
+     <script type="text/javascript">  
+        $(document).ready(function(){
+            $("#extable1 tr:odd").addClass("odd");
+            $("#extable1 tr:not(.odd)").hide();
+            $("#extable1 tr:first-child").show();
+            
+            $("#extable1 tr.odd").click(function(){
+                $(this).next("tr").toggle();
+                $(this).find(".arrow").toggleClass("up");
+            });
+            //$("#extable1").jExpand();
+        });
+    </script>        
+    
 	</head>
 	
 	<body>
@@ -19,14 +53,18 @@
 		<section class="wrapper" id="wrapper"> 
 	
 		<div class="title">
+        	<!--The page logo-->
 			<p><img src="unmc.png" width="278" height="91"  alt="UNMC Logo"/> &nbsp;&nbsp; UNMC Platform 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--The user profile-->
 			<img src="icon.png" width="91" height="83"  alt="UNMC Logo"/>
 			&nbsp;&nbsp;
+            <!--The logout button-->
 			<a href="index.html">
-			<button type="button" class="button">Log out</button></a></p>
+			<button type="button" class="button" onClick="alert('You have successfully log out')">Log out</button></a></p>
 		</div>
 
+		<!--The header that with hyperlinks to other part of the webpage-->
 		<div class="header">&nbsp;&nbsp;
 			<a href="SACS_home.html" class="main">Home</a>
 				&nbsp;&nbsp; &nbsp;&nbsp;
@@ -38,37 +76,100 @@
 				&nbsp;&nbsp; &nbsp;&nbsp;
 			<a href="SACS_manage_events.html" class="main">Manage Events</a>
 		</div><br>
-		
+        
+		<!--The main part of the vertical tab-->
 		<div id="v-nav">
 			<ul>
 				<li class="first current">Edit / Delete Events</li>
 				<li class="last">Manage Meetings</li>
 			</ul>
-	
+		
+        <!--The vertical tab contents that allows the user to edit/delete event(s)-->	
 		<div class="tab-content">
 			<h4>Events Available</h4><br>
-            <p style="border:1.5px solid black"> 
-            &nbsp;&nbsp;Event 1: <br><br>
-            &nbsp;&nbsp;Detail: <br>
-            &nbsp;&nbsp;Venue: <br>
-            &nbsp;&nbsp;Time: <br>
-            &nbsp;&nbsp;Events Manager(s):<br>
-            &nbsp;&nbsp;Manager 1 <br>
-            &nbsp;&nbsp;Manager 2 <br></p><br>
+            <table id="extable" width="500">
+        		<tr>
+            		<th>Events for 2014/2015</th>
+                    <th></th>
+        		</tr>
+        		<tr>
+            		<td>Event 1</td>
+            		<td><div class="arrow"></div></td>
+        		</tr>
+       		 	<tr>
+            		<td colspan="5">
+                	<h4>Additional information</h4>
+                		<ul>
+                    	<li>Event 1: </li>
+                    	<li>Detail: </li>
+                   	 	<li>Venue: </li>
+                    	<li>Time: </li>
+                    	<li>Events Manager(s): </li>
+                    	<li>Manager 1 </li>
+                    	<li>Manager 2 </li>
+                 		</ul>   
+            		</td>
+        		</tr>
+       			 <tr>
+            		<td>Event 2</td>
+            		<td><div class="arrow"></div></td>
+       			 </tr>
+        		<tr>
+            		<td colspan="5">
+                	<h4>Additional information</h4>
+                		<ul>
+                    	<li>Event 1: </li>
+                    	<li>Detail: </li>
+                   	 	<li>Venue: </li>
+                    	<li>Time: </li>
+                    	<li>Events Manager(s): </li>
+                    	<li>Manager 1 </li>
+                    	<li>Manager 2 </li>
+                 		</ul>   
+            		</td>
+        		</tr>
+                </table>
             <p align="right">
-            <button type="button" class="button">Delete</button>
-			<button type="button" class="button">Edit</button>
+            <button type="button" onClick="alert('An event has been successfully deleted.')" class="button">Delete</button>
+			<button type="button" onClick="alert('The event has been edited.')" class="button">Edit</button>
             </p>
 		</div>
-	
+		
+        <!--The vertical tab contents that allows manager(s) to meet-->	
 		<div class="tab-content">
 			<h4>Events Managers</h4><br>
-            <p style="border:1.5px solid black"> 
-            &nbsp;&nbsp;Events Manager(s):<br>
-            &nbsp;&nbsp;Manager 1 <br>
-            &nbsp;&nbsp;Manager 2 <br></p><br>
-            <p align="right">
-            <button type="button" class="button">Calling For Managers</button>
+             <table id="extable1" width="500">
+        		<tr>
+            		<th>Events Manager(s) for 2014/2015</th>
+                    <th></th>
+        		</tr>
+        		<tr>
+            		<td>Event 1</td>
+            		<td><div class="arrow"></div></td>
+        		</tr>
+       		 	<tr>
+            		<td colspan="5">
+                	<h4>Manager(s)</h4>
+                    	<li>Manager 1 </li>
+                    	<li>Manager 2 </li>
+                 		</ul>   
+            		</td>
+        		</tr>
+       			 <tr>
+            		<td>Event 2</td>
+            		<td><div class="arrow"></div></td>
+       			 </tr>
+        		<tr>
+            		<td colspan="5">
+                	<h4>Manager(s)</h4>
+                    	<li>Manager 1 </li>
+                    	<li>Manager 2 </li>
+                 		</ul>      
+            		</td>
+        		</tr>
+                </table><br>
+                <p align="right">
+            <button type="button" onClick="alert('An email has been sent to the event manager(s).')" class="button">Calling For Managers</button>
             </p>
 		</div>
 	
@@ -81,6 +182,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="http://benalman.com/code/projects/jquery-hashchange/jquery.ba-hashchange.js"></script>
 	<script type="text/javascript" src="assets.js"></script>
 	
-	&copy; UNMC
+	<!--UNMC copyright-->
+	<p class="footer">&copy; UNMC 2015</p>
 	</body>
 </html>
